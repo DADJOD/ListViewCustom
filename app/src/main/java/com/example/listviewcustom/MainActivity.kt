@@ -3,6 +3,7 @@ package com.example.listviewcustom
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
     private lateinit var myContainer: PaneContainer
 
@@ -15,5 +16,11 @@ class MainActivity : AppCompatActivity() {
 
     fun getContainer() : PaneContainer {
         return myContainer
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        if (myContainer.onBackPressed()) return
+        super.onBackPressed()
     }
 }

@@ -18,4 +18,9 @@ class DualPaneContainer(context: Context?, attrs: AttributeSet?) : LinearLayout(
         detailView.showItem(item)
     }
 
+    override fun onBackPressed(): Boolean {
+        return false
+    }
+
+
 }

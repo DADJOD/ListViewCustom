@@ -19,7 +19,6 @@ class ItemListView(context: Context?, attrs: AttributeSet?) : ListView(context, 
                 container.showItem(item as String)
             }
     }
-
 }
 
 //class ItemListView(context: Context?, attrs: AttributeSet?) :
